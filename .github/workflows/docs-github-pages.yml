@@ -48,7 +48,3 @@ jobs:
         with:
           # Upload entire repository
           path: 'docs/'
-      - name: Deploy to GitHub Pages
-        if: always()
-        id: deployment
-        uses: actions/deploy-pages@v2
