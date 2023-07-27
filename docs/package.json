@@ -7,7 +7,7 @@
     "preinstall": "node ../scripts/setupDeps.js && npm run copy-analytics",
     "copy-analytics": "cpx \"..\\libraries\\site-analytics\\dist\\index.js\" \"public\\analytics\"",
     "clean": "rm -rf dist",
-    "setup": "npm run clean && tsc && node dist/setup.js"
+    "setup": "npm run clean && tsc && node dist/setup.js && npm run preinstall"
   },
   "dependencies": {
     "@pwabuilder/site-analytics": "file:../../libraries/site-analytics"
